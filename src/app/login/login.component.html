@@ -1,0 +1,25 @@
+<div id="body">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-6 mx-auto">
+          <div class="card my-5">
+            <div class="card-body">
+              <h5 class="card-title text-center"><img src="assets/img/login.png"></h5>
+              <form>
+                  <div class="form-group">
+                    <label for="uname">User Name</label>
+                    <input type="text" #username class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" #password class="form-control" required>
+                  </div>
+                  <button type="submit" class="btn btn-success" (click)="loginuser(username.value,password.value)">Submit</button> 
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
